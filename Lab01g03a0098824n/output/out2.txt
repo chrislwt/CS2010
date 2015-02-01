@@ -1,0 +1,6 @@
+abc_$ is not an identifier
+bA%a1 is not an identifier
+A_@S is not an identifier
+@@$# is not an identifier
+!a is not an identifier
+??? is not an identifier

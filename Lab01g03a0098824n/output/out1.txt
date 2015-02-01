@@ -1,0 +1,5 @@
+89 is not an identifier
+1abc is not an identifier
+12_59 is not an identifier
+2 is not an identifier
+1$%vsb is not an identifier

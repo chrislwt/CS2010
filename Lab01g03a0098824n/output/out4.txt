@@ -1,0 +1,12 @@
+abc(_2 is not an identifier
+8aPPles is not an identifier
+_newVariable is an identifier
+newVar$ is not an identifier
+!comPaRE is not an identifier
+A_string is an identifier
+X_ is an identifier
+_Y! is not an identifier
+x%y is not an identifier
+A_C1 is an identifier
+integ_123 is an identifier
+%_i12 is not an identifier

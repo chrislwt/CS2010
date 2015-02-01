@@ -1,0 +1,14 @@
+Case1: A set of input strings which begins with a digit (0-9) or contains ONLY digit(s)
+Case2: A set of input strings which contains any illegal characters such as $%?.!# etc.
+Case3: A set of input strings which contains combination of letters, digits and underscore character which forms a Java identifier
+Case4: A set of input Strings which can/cannot be a Java identifier
+
+in1.txt: //Used to test Case1
+in2.txt: //Used to test Case2
+in3.txt: //Used to test Case3
+in4.txt: //Used to test Case4
+
+out1.txt: //expected test results of in1.txt
+out2.txt: //expected test results of in2.txt
+out3.txt: //expected test results of in3.txt
+out4.txt: //expected test results of in4.txt

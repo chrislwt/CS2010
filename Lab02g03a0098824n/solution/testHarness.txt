@@ -1,0 +1,17 @@
+Case1: The given sample input 1. It is used to test whether the sample output 1 can be produced.
+Case2: The given sample input 2. It is used to test whether the sample output 2 can be produced.
+Case3: It is used to test whether and empty binary tree can be produced.
+Case4: It is used to test if an existing node can be replaced if a new node contains the same path.
+Case5: It is used to test if there are more than one input nodes without data value.
+
+in1.txt: //Used to test Case1
+in2.txt: //Used to test Case2
+in3.txt: //Used to test Case3
+in4.txt: //Used to test Case4
+in5.txt: //Used to test Case5
+
+out1.txt: //expected test results of in1.txt
+out2.txt: //expected test results of in2.txt
+out3.txt: //expected test results of in3.txt
+out4.txt: //expected test results of in4.txt
+out5.txt: //expected test results of in5.txt

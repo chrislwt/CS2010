@@ -1,0 +1,6 @@
+bAA_s is an identifier
+_12gfer is an identifier
+A_abc89 is an identifier
+po_in is an identifier
+x is an identifier
+XYZ is an identifier
