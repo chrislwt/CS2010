@@ -1,0 +1,1 @@
+Salary earners cannot exceed 1000000

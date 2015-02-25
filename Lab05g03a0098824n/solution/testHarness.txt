@@ -1,0 +1,15 @@
+Case1: It is used to test the functionality of the program, according to the sample given in question
+Case2: It is used to test the functionality of the program, other inputs
+Case3: It is used to test for error when label is not a string
+Case4: It is used to test for error when frequency is not an integer
+
+in1.txt: //Used to test Case1
+in2.txt: //Used to test Case2
+in3.txt: //Used to test Case3
+in4.txt: //Used to test Case4
+
+
+out1.txt: //expected test results of in1.txt
+out2.txt: //expected test results of in2.txt
+out3.txt: //expected test results of in3.txt
+out4.txt: //expected test results of in4.txt

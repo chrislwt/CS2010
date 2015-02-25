@@ -1,0 +1,23 @@
+Case1: It is used to test the functionality of the program, using small values for inputs
+Case2: It is used to test the functionality of the program, using big values for inputs
+Case3: It is used to test for error when k exceeds 100
+Case4: It is used to test for error when m exceeds 1000000
+Case5: It is used to test for error when k is greater than m
+Case6: It is used to test for error when m is negative
+Case7: It is used to test for error when k is negative
+
+in1.txt: //Used to test Case1
+in2.txt: //Used to test Case2
+in3.txt: //Used to test Case3
+in4.txt: //Used to test Case4
+in5.txt: //Used to test Case5
+in6.txt: //Used to test Case6
+in7.txt: //Used to test Case7
+
+out1.txt: //expected test results of in1.txt
+out2.txt: //expected test results of in2.txt
+out3.txt: //expected test results of in3.txt
+out4.txt: //expected test results of in4.txt
+out5.txt: //expected test results of in5.txt
+out6.txt: //expected test results of in6.txt
+out7.txt: //expected test results of in7.txt

@@ -1,0 +1,1 @@
+Top k of the salary earners cannot exceed 100

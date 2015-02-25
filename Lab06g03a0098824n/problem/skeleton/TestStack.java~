@@ -1,0 +1,38 @@
+import java.util.*;
+import java.math.*;
+public class TestStack {
+  public static void main(String[] args) {
+    MyStack<Integer> st = new MyStack<Integer>();
+    Stack<Integer> st1 = new Stack<Integer>();
+    int j;
+    System.out.println("Fill a Java stack and MyStack with some random numbers " );
+    for (int i = 0; i < 5; ++i) {
+      st.push(j);
+      st1.push(j);
+    }
+    System.out.println("Print the 2 stacks for comparison" );
+  }
+}
+
+// Implement the following class
+class MyNode<E> {
+
+}
+
+// Implement the comparator class needed when a PriorityQueue object is created
+class ComparatorMyNode<E> implements Comparator<MyNode<E>> {
+  public int compare(MyNode<E> e1, MyNode<E> e2) {
+
+  
+  }
+}  
+
+// Implement the stack using PriorityQueue
+class MyStack<E> {
+  private PriorityQueue<MyNode<E>> pq;
+
+
+}
+
+  
+  
