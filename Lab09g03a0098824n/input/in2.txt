@@ -1,0 +1,23 @@
+3
+Simei Avenue
+Changi General Hospital
+96289
+0 1.34 103.94
+5 10 17 31 NR7
+Orchard Road
+Orchard Plaza
+08137
+0 1.30 103.84
+598 590 587 143 123 NR6 NR7
+Lower Kent Ridge Road
+Sheares Hall
+18311
+0 1.29 103.78
+95B 95
+getGPS 08137
+getBusStopAtThisStation 96289
+getQualifier 18311
+getBusStop 08137
+distance 18311 08137
+getRoadName 96289
+quit

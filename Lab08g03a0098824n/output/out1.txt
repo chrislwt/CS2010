@@ -1,0 +1,7 @@
+1/6 has a cycle (6) of length 1
+
+5/7 has a cycle (714285) of length 6
+
+1/250 has a cycle (0) of length 1
+
+300/31 has a cycle (677419354838709) of length 15

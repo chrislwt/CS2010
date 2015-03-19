@@ -1,0 +1,12 @@
+Case1: It is used to test the functionality of the program, according to the sample given in question
+Case2: It is used to test the functionality of the program when the bus stops are entered in no order and more all functions are called
+
+
+in1.txt: //Used to test Case1
+in2.txt: //Used to test Case2
+
+
+out1.txt: //expected test results of in1.txt
+out2.txt: //expected test results of in2.txt
+
+

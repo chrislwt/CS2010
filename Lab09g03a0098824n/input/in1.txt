@@ -1,0 +1,17 @@
+2
+Adam Road
+Bef SICC
+41141
+0 0 0
+95B 2
+Adam Road
+Opp SICC
+41149
+0.5 0 0
+95A 1
+getRoadName 41141
+getQualifier 41149
+getGPS 41141
+getBusStopAtThisStation 41141
+distance 41141 41149
+quit

@@ -1,0 +1,2 @@
+Exception in thread "main" java.lang.Error: Invalid input.
+	at RepeatingDecimals.main(RepeatingDecimals.java:20)

@@ -1,0 +1,12 @@
+Adam Road-.Bef SICC(B41141)(0.0,0.0,0.0)[95B, 2]
+Adam Road-.Opp SICC(B41149)(0.5,0.0,0.0)[95A, 1]
+getRoadName 41141
+Adam Road
+getQualifier 41149
+Opp SICC
+getGPS 41141
+(0.0,0.0,0.0)
+getBusStopAtThisStation 41141
+[95B, 2]
+distance 41141 41149
+0.5
