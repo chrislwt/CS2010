@@ -2,19 +2,19 @@ public class BusStop {
 
 	private String roadName = null;
 	private String qualifier = null;
-	private int stopNum = 0;
+	private String stopNum = null;
 	private String stopGPS = null;
 	private String busServices = null;
 
 	public BusStop(){
 		roadName = null;
 		qualifier = null;
-		stopNum = 0;
+		stopNum = null;
 		stopGPS = null;
 		busServices = null;
 	}
 
-	public BusStop(String roadName, String qualifier, int stopNum, String stopGPS, String busServices) {
+	public BusStop(String roadName, String qualifier, String stopNum, String stopGPS, String busServices) {
 		this.roadName = roadName;
 		this.qualifier = qualifier;
 		this.stopNum = stopNum;
@@ -38,11 +38,11 @@ public class BusStop {
 		this.qualifier = qualifier;
 	}
 
-	public int getStopNum(){
+	public String getStopNum(){
 		return stopNum;
 	}
 
-	public void setStopNum(int stopNum){
+	public void setStopNum(String stopNum){
 		this.stopNum = stopNum;
 	}
 

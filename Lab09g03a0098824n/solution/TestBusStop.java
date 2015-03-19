@@ -14,14 +14,16 @@ public class TestBusStop {
 	 */
 	public static void main(String[] args) {
 		int numOfBusStops = Integer.parseInt(sc.nextLine());
+		int busStopsMapKey = 0;
 		for(int i = 0; i < numOfBusStops; i++){
 			BusStop tempStop = new BusStop();
 			tempStop.setRoadName(sc.nextLine());
 			tempStop.setQualifier(sc.nextLine());
-			tempStop.setStopNum(Integer.parseInt(sc.nextLine()));
+			tempStop.setStopNum(sc.nextLine());
 			tempStop.setStopGPS(sc.nextLine());
 			tempStop.setbusServices(sc.nextLine());
-			busStopsMap.put(tempStop.getStopNum(), tempStop);
+			busStopsMapKey = Integer.parseInt(tempStop.getStopNum());
+			busStopsMap.put(busStopsMapKey, tempStop);
 		}
 
 		//for commands

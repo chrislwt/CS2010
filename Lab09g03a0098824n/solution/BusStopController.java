@@ -22,51 +22,30 @@ public class BusStopController {
 			}
 
 			tempStop.setbusServices(tempStop.getbusServices().replace(" ", ", "));
-			//for bus stop number that starts with 0, parsing as int will remove the 0 so there is a need to manually put back when printing
-			if(tempStop.getStopNum() < 10000) {
-				System.out.println(tempStop.getRoadName()+"-."+tempStop.getQualifier()+
-						"(B0"+tempStop.getStopNum()+")("+gpsInDouble.get(0)+","+gpsInDouble.get(1)+","
-						+gpsInDouble.get(2)+")["+tempStop.getbusServices()+"]");
-			} else {
-				System.out.println(tempStop.getRoadName()+"-."+tempStop.getQualifier()+
-						"(B"+tempStop.getStopNum()+")("+gpsInDouble.get(0)+","+gpsInDouble.get(1)+","
-						+gpsInDouble.get(2)+")["+tempStop.getbusServices()+"]");
-			}
-
+			System.out.println(tempStop.getRoadName()+"-."+tempStop.getQualifier()+
+					"(B"+tempStop.getStopNum()+")("+gpsInDouble.get(0)+","+gpsInDouble.get(1)+","
+					+gpsInDouble.get(2)+")["+tempStop.getbusServices()+"]");
 		}
 	}
 
 	public void getRoadName(int busStopNum) {
-		if(busStopNum < 10000) {
-			System.out.println("getRoadName 0"+ busStopNum);
-		} else {
-			System.out.println("getRoadName "+ busStopNum);
-		}
-
+		String busStopNumInString = busStopsMap.get(busStopNum).getStopNum();
+		System.out.println("getRoadName "+ busStopNumInString);
 		String roadName = busStopsMap.get(busStopNum).getRoadName();
 		System.out.println(roadName);
 	}
 
 	public void getQualifier(int busStopNum) {
-		if(busStopNum < 10000) {
-			System.out.println("getQualifier 0"+ busStopNum);
-		} else {
-			System.out.println("getQualifier "+ busStopNum);
-		}
-
+		String busStopNumInString = busStopsMap.get(busStopNum).getStopNum();
 		String qualifier = busStopsMap.get(busStopNum).getQualifier();
+		System.out.println("getQualifier "+ busStopNumInString);
 		System.out.println(qualifier);
 	}
 
 	public void getBusStop(int busStopNum) {
-		if(busStopNum < 10000) {
-			System.out.println("getBusStop 0"+ busStopNum);
-		} else {
-			System.out.println("getBusStop "+ busStopNum);
-		}
-
+		String busStopNumInString = busStopsMap.get(busStopNum).getStopNum();
 		BusStop tempStop = busStopsMap.get(busStopNum);
-
+		System.out.println("getBusStop "+ busStopNumInString);
 		ArrayList<Double> gpsInDouble = new ArrayList<Double>();
 		String[] gpsInString = tempStop.getStopGPS().split(" ");
 
@@ -74,28 +53,16 @@ public class BusStopController {
 			gpsInDouble.add(Double.parseDouble(gpsInString[i]));
 		}
 
-		if(tempStop.getStopNum() < 10000) {
-			System.out.println(tempStop.getRoadName()+"-."+tempStop.getQualifier()+
-					"(B0"+tempStop.getStopNum()+")("+gpsInDouble.get(0)+","+gpsInDouble.get(1)+","
-					+gpsInDouble.get(2)+")["+tempStop.getbusServices()+"]");
-		} else {
-			System.out.println(tempStop.getRoadName()+"-."+tempStop.getQualifier()+
-					"(B"+tempStop.getStopNum()+")("+gpsInDouble.get(0)+","+gpsInDouble.get(1)+","
-					+gpsInDouble.get(2)+")["+tempStop.getbusServices()+"]");
-		}
+		System.out.println(tempStop.getRoadName()+"-."+tempStop.getQualifier()+
+				"(B"+tempStop.getStopNum()+")("+gpsInDouble.get(0)+","+gpsInDouble.get(1)+","
+				+gpsInDouble.get(2)+")["+tempStop.getbusServices()+"]");
 	}
 
 	public void getGPS(int busStopNum) {
-		if(busStopNum < 10000) {
-			System.out.println("getGPS 0"+ busStopNum);
-		} else {
-			System.out.println("getGPS "+ busStopNum);
-		}
-
-		BusStop tempStop = busStopsMap.get(busStopNum);
-
+		String busStopNumInString = busStopsMap.get(busStopNum).getStopNum();
+		System.out.println("getGPS "+ busStopNumInString);
+		String[] gpsInString = busStopsMap.get(busStopNum).getStopGPS().split(" ");
 		ArrayList<Double> gpsInDouble = new ArrayList<Double>();
-		String[] gpsInString = tempStop.getStopGPS().split(" ");
 
 		for(int i = 0; i < 3; i++){
 			gpsInDouble.add(Double.parseDouble(gpsInString[i]));
@@ -105,33 +72,20 @@ public class BusStopController {
 	}
 
 	public void getBusStopAtThisStation(int busStopNum) {
-		if(busStopNum < 10000) {
-			System.out.println("getBusStopAtThisStation 0"+ busStopNum);
-		} else {
-			System.out.println("getBusStopAtThisStation "+ busStopNum);
-		}
-		BusStop tempStop = busStopsMap.get(busStopNum);
-
-		System.out.println("["+tempStop.getbusServices()+"]");
+		String busStopNumInString = busStopsMap.get(busStopNum).getStopNum();
+		System.out.println("getBusStopAtThisStation "+ busStopNumInString);
+		System.out.println("["+busStopsMap.get(busStopNum).getbusServices()+"]");
 	}
 
 	public void distance(int busStopNum1, int busStopNum2) {
 		double distance = 0;
-		if(busStopNum1 < 10000 && busStopNum2 < 10000) {
-			System.out.println("distance 0"+ busStopNum1 + " 0" + busStopNum2);
-		} else if(busStopNum1 < 10000) {
-			System.out.println("distance 0"+ busStopNum1 + " " + busStopNum2);
-		} else if(busStopNum2 < 10000) {
-			System.out.println("distance "+ busStopNum1 + " 0" + busStopNum2);
-		} else {
-			System.out.println("distance "+ busStopNum1 + " " + busStopNum2);
-		}
+		String busStopNumInString1 = busStopsMap.get(busStopNum1).getStopNum();
+		String busStopNumInString2 = busStopsMap.get(busStopNum2).getStopNum();
+		System.out.println("distance "+ busStopNumInString1 + " " + busStopNumInString2);
 
-		BusStop tempStop1 = busStopsMap.get(busStopNum1);
-		BusStop tempStop2 = busStopsMap.get(busStopNum2);
 		ArrayList<Double> gpsInDouble = new ArrayList<Double>();
-		String[] gpsInString1 = tempStop1.getStopGPS().split(" ");
-		String[] gpsInString2 = tempStop2.getStopGPS().split(" ");
+		String[] gpsInString1 = busStopsMap.get(busStopNum1).getStopGPS().split(" ");
+		String[] gpsInString2 = busStopsMap.get(busStopNum2).getStopGPS().split(" ");
 
 		for(int i = 0; i < 3; i++){
 			gpsInDouble.add(Double.parseDouble(gpsInString1[i]));
